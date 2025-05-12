@@ -4,6 +4,9 @@ A command-line tool written in Go to check the HTTP status of URLs concurrently 
 Build or run the project:
 - go run main.go checker.go -f urls.txt -c 10
 
+Example Usage
+To run the project with a concurrency limit of 5:
+go run main.go checker.go -f urls.txt -c 5
 
 Features
 Concurrent URL Checking: The tool uses Go goroutines to check multiple URLs at the same time.
@@ -13,23 +16,7 @@ Progress Indicator: Displays real-time progress while checking URLs.
 CSV Report: Outputs the results (including URL, HTTP status code, response time, and errors) to a report.csv file.
 Summary Stats: At the end of the process, the tool prints summary stats such as total URLs, failed URLs, and average response time.
 
-Installation
-Clone the repository:
-git clone https://github.com/yourusername/url-status-checker.git
-
-Change to the project directory:
-cd url-status-checker
-
-Command-line Arguments
--f: Specify the path to the text file containing URLs (default: urls.txt).
--c: Set the concurrency limit for checking URLs (default: 10).
-
-Example Usage
-To run the project with a concurrency limit of 5:
-go run main.go checker.go -f urls.txt -c 5
-
 This will check the URLs listed in urls.txt with a maximum of 5 concurrent checks.
-
 Input File Format
 The input file (urls.txt) should contain one URL per line, for example:
 https://google.com
@@ -52,18 +39,3 @@ Average Response Time: 142.67 ms
 Total Time Taken: 1.24s
 Error Handling
 If a URL is malformed or unreachable, the error is logged and reported in the report.csv file.
-
-The program does not crash due to failed requests.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Customization (Optional)
-You can modify the concurrency limit (-c) to adjust the number of concurrent requests.
-
-Add more sophisticated error handling as needed for specific use cases.
-
-Extend the program to handle more detailed statistics, such as response headers or request retries.
-
-Contributions
-Feel free to fork the repository, create issues, or submit pull requests for any improvements or bug fixes.
