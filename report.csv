@@ -1,0 +1,21 @@
+URL,Status,ResponseTime(ms),Error
+https://www.nonexistent12345.xyz,N/A,N/A,"Get ""https://www.nonexistent12345.xyz"": dial tcp: lookup www.nonexistent12345.xyz: no such host"
+https://www.example.com,200,307,
+https://www.google.com,200,531,
+https://www.dropbox.com,200,816,
+https://www.microsoft.com,200,823,
+https://www.apple.com,200,439,
+https://www.stackoverflow.com,200,1147,
+https://www.instagram.com,200,753,
+https://www.facebook.com,200,652,
+https://www.netflix.com,N/A,N/A,"Get ""https://www.netflix.com"": stream error: stream ID 1; CANCEL; received from peer"
+https://www.quora.com,429,412,
+https://www.linkedin.com,200,1092,
+https://www.thisurldoesnotexist.com,410,2018,
+https://www.wikipedia.org,200,770,
+https://www.openai.com,403,209,
+https://www.reddit.com,200,693,
+https://www.twitter.com,400,1374,
+https://www.github.com,200,833,
+https://www.spotify.com,200,1215,
+https://www.amazon.com,200,1737,
